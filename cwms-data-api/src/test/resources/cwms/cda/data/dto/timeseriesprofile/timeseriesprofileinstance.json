@@ -1,44 +1,50 @@
 {
-  "time-series-profile":
-  {
-    "location-id": "DET",
+  "time-series-profile": {
+    "location-id": {
+      "office-id": "SWT",
+      "name": "SWAN"
+    },
+    "description": "Description",
+    "parameter-list": [
+      "Temp-Water",
+      "Depth"
+    ],
     "key-parameter": "Depth",
-    "parameter-list": [ "Temp-Water", "Depth"],
-    "description": "Demonstration Profile for Couger Lake",
-    "office-id": "SWT",
-    "ref-ts-id": "DET.Elev-Forebay.Inst.0.0.Mixed-Rev"
+    "reference-ts-id": {
+      "office-id": "SWT",
+      "name": "SWAN.Elev.Inst.1Hour.0.DSS-Obs"
+    }
   },
-
-  "timeseries-list" :  [
+  "time-series-list": [
     {
-         "parameter": "Temp-Water",
-         "unit": "F",
-         "time-value-pairs":
-        [
-           {
-              "time": "09/09/2019,13:16:01Z",
-              "value": "1.0"
-           },
-           {
-             "time": "09/09/2019,13:17:20Z",
-             "value": "2.0"
-           }
-        ]
+      "parameter": "Temp-Water",
+      "unit": "F",
+      "time-zone": "PST",
+      "values": [
+        {
+          "date-time": 1612869582120,
+          "value": 1.0
+        },
+        {
+          "date-time": 1612869582220,
+          "value": 3.0
+        }
+      ]
     },
     {
-        "parameter": "Depth",
-        "unit": "ft",
-        "time-value-pairs":
-        [
-          {
-            "time": "09/09/2019,13:16:01-07:00",
-            "value": "1.0"
-          },
-          {
-            "time": "09/09/2019,13:17:20-07:00",
-            "value": "2.0"
-          }
-        ]
+      "parameter": "Depth",
+      "unit": "ft",
+      "time-zone": "PST",
+      "values": [
+        {
+          "date-time": 1612869582120,
+          "value": 1.0
+        },
+        {
+          "date-time": 1612869582220,
+          "value": 3.0
+        }
+      ]
     }
   ]
 }
